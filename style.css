@@ -111,14 +111,35 @@
     transform: scale(1.5);
 }
 
+/* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotazione;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes rotazione {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+    animation-name: rotazione2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes rotazione2 {
+    50% {
+        transform: rotate(270deg);
+    }
+}
+
+/* esercizio 12 e 13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -137,16 +158,78 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #f5f5f5;
+    background: #ffffff;
     width: 60px;
     height: 20px;
+    animation-name: spostamento;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
+
 
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #f5f5f5;
+    background: #ffffff;
     width: 60px;
     height: 20px;
+    animation-name: spostamento2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spostamento {
+    25% {
+        top: -10px;
+        left: 90%;
+    }
+
+    50% {
+        top: 60px;
+        left: 90%;
+    }
+
+    75% {
+        top: 60px;
+        left: -20px;
+    }
+
+    90% {
+        top: -10px;
+        left: -20px;
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+
+@keyframes spostamento2 {
+    25% {
+        right: 90%;
+        bottom: -10px;
+    }
+
+    50% {
+        right: 90%;
+        bottom: 60px;
+    }
+
+    75% {
+        right: -30%;
+        bottom: 60px;
+    }
+
+    90% {
+        right: -30%;
+        bottom: -10px;
+    }
+
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
 }
