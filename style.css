@@ -97,10 +97,18 @@
     filter: sepia(0.80);
 }
 
-
+/* esercizio 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 3s;
+}
+
+.ex-9-img:hover {
+    border-radius: 15px;
+    filter: contrast(2);
+    filter: grayscale(0.6);
+    transform: scale(1.5);
 }
 
 .ex-10-icon {
